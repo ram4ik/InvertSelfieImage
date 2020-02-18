@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Image(systemName: "person")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .rotation3DEffect(.degrees(45), axis: (x: -1, y: 0, z: 0))
     }
 }
 
